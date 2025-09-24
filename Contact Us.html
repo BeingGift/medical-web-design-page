@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="with=device-width, initial- scale=1.0">
+<title>Mainstek Medical</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="sub3-header">
+		<nav>
+			<a href="index.html"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onClick="hideMenu()"></i>
+				<ul>
+					<li><a href="Mainstek Medical.html">HOME</a></li>
+					<li><a href="About Us.html">ABOUT US</a></li>
+					<li><a href="Services.html">SERVICES</a></li>
+					<li><a href="Mission.html">MISSION</a></li>
+					<li><a href="Contact Us.html">CONTACT US</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onClick="showMenu()"></i>
+		</nav>
+		
+		<h1>CONTACT US</h1>
+			
+	</section>
+	
+	<section class="contact">
+		
+		<div class="row">
+			<div class="contact-col">
+				<div>
+					<span>
+						<h5>Business Name:</h5>
+					    <p>Mainstek Medical CC</p>
+					</span>
+				</div>
+				<div>
+					<span>
+						<h5>Phone:</h5>
+					    <p>+264 81 455 6369</p>
+					</span>
+				</div>
+				<div>
+					<span>
+					   <h5>Email:</h5>
+					   <p>mpollen1977@gmail.com</p>
+					</span>
+				</div>
+				<div>
+					<span>
+						<h5>Location:</h5>
+					    <p>Windhoek, Khomas Region, Namibia</p>
+					</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="contact-col">
+			
+			<form action="form-hander.php" method="post">
+				<input type="text" name="name" placeholder="Enter your name" required>
+				<input type="email" name="email" placeholder="Enter your email address" required>
+				<input type="text"  name="subject"placeholder="Enter your subject" required>
+				
+				<textarea  rows="8" name="message" placeholder="Message" required></textarea>
+				
+				<button type="submit" class="hero-btn">Send Message</button>
+			
+			</form>
+			
+		
+		</div>
+		
+
+	
+	</section>
+	
+	<section class="footer">
+		
+		<p><b>Feel Free To Ask Qustion If You Are Unsrue Of Anything <br> To Get More Information Contact Us.</b> <br>
+		<b>Phone: 081 455 6369</b> <br>
+		<b>Email: mpollen1977@gmail.com</b>
+		<p>
+	</section>
+	
+	<script>
+		
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	
+	</script>
+	
+</body>
+</html>
